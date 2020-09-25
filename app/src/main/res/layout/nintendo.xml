@@ -10,7 +10,7 @@
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#DC0707"
+        android:background="#E4000F"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -43,6 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:background="#E4000F"
         android:text="Nintendo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,6 +105,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question"
@@ -117,6 +119,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question"
@@ -130,6 +133,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button5"
@@ -143,6 +147,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button4"
@@ -180,6 +185,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button7" />
@@ -191,6 +197,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -202,6 +209,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -213,6 +221,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button6" />
@@ -247,6 +256,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button10" />
@@ -258,6 +268,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button11" />
@@ -269,6 +280,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -280,6 +292,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -314,6 +327,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -325,6 +339,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button14" />
@@ -336,6 +351,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button17" />
@@ -347,6 +363,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -381,6 +398,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -392,6 +410,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button21" />
@@ -403,6 +422,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button18" />
@@ -414,6 +434,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -448,6 +469,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button22" />
@@ -459,6 +481,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -470,6 +493,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button25" />
@@ -481,6 +505,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -516,6 +541,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -527,6 +553,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button26" />
@@ -538,6 +565,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button27" />
@@ -549,6 +577,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -583,6 +612,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -594,6 +624,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button30" />
@@ -605,6 +636,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button31" />
@@ -616,6 +648,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -650,6 +683,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -661,6 +695,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button37" />
@@ -672,6 +707,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button34" />
@@ -683,6 +719,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -717,6 +754,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button39" />
@@ -728,6 +766,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -739,6 +778,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginRight="70dp"
+                    android:background="#E4000F"
                     android:text="Answer 2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/Question" />
@@ -750,6 +790,7 @@
                     android:layout_marginStart="70dp"
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="16dp"
+                    android:background="#E4000F"
                     android:text="Answer 3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button40" />
