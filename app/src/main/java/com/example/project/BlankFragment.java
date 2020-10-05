@@ -50,12 +50,9 @@ public class BlankFragment extends Fragment {
         return fragment;
     }
 
-    public static void newInstance(String nintendo, String s) {
-        return ;
+    public static BlankFragment newInstance(String nintendo, String s) {
+        return null;
     }
-
-
-
 
 
     @Override
