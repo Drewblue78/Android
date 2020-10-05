@@ -6,6 +6,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
@@ -46,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
 
         nQuizAdapter = new RecycleAdapter(this);
         nQuiz.setAdapter(nQuizAdapter);
-        nQuiz.setLayoutManager(new LinearLayoutManager(this));
-        nQuizAdapter.addQuizSet(new QuizSet(n"Question 1" ))
+        nQuiz.setLayoutManager(new GridLayoutManager(this, 6));
+        nQuiz.setAdapter(nQuizAdapter);
 
     }
 }

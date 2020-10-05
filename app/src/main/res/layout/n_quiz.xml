@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/Quiz"
+            android:id="@+id/quiz"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:text="Video Game Quiz"
@@ -39,7 +39,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <Button
-        android:id="@+id/Console"
+        android:id="@+id/console"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
