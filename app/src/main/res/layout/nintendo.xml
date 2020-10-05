@@ -49,15 +49,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appbar" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="362dp"
-        android:layout_height="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Console"
-        app:srcCompat="@android:drawable/btn_dialog" />
-
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="390dp"
@@ -113,20 +104,6 @@
                     tools:layout_conversion_absoluteWidth="88dp" />
 
                 <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="70dp"
-                    android:layout_marginRight="70dp"
-                    android:background="#E4000F"
-                    android:text="Answer2"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/Question"
-                    tools:layout_conversion_absoluteHeight="48dp"
-                    tools:layout_conversion_absoluteWidth="88dp" />
-
-                <Button
                     android:id="@+id/button3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -153,6 +130,14 @@
                     app:layout_constraintTop_toBottomOf="@+id/button4"
                     tools:layout_conversion_absoluteHeight="48dp"
                     tools:layout_conversion_absoluteWidth="88dp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="362dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@android:drawable/btn_dialog"
+                    tools:layout_editor_absoluteX="21dp"
+                    tools:layout_editor_absoluteY="9dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -225,6 +210,17 @@
                     android:text="Answer3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#E4000F"
+                    android:text="Answer2"
+                    tools:layout_conversion_absoluteHeight="48dp"
+                    tools:layout_conversion_absoluteWidth="88dp"
+                    tools:layout_editor_absoluteX="144dp"
+                    tools:layout_editor_absoluteY="256dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
