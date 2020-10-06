@@ -15,10 +15,10 @@
         android:text="Nintendo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nImage1" />
+        app:layout_constraintTop_toBottomOf="@+id/imgBanner" />
 
     <ImageView
-        android:id="@+id/nImage1"
+        android:id="@+id/imgBanner"
         android:layout_width="386dp"
         android:layout_height="89dp"
         app:layout_constraintEnd_toEndOf="parent"

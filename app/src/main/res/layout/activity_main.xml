@@ -1,94 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appbar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#888888"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/appbar"
-        android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/quiz"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#9C9C9C">
+        android:layout_marginEnd="220dp"
+        android:layout_marginRight="220dp"
+        android:text="Video Game Quiz"
+        android:textColor="#FDFDFD"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="36dp"
+        tools:layout_conversion_absoluteWidth="393dp" />
 
-        <TextView
-            android:id="@+id/quiz"
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Choose Your Console"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="393dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose"
+        app:tabMode="scrollable"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="282dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/nintendo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="220dp"
-            android:layout_marginRight="220dp"
-            android:text="Video Game Quiz"
-            android:textColor="#FDFDFD"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_conversion_absoluteHeight="36dp"
-            tools:layout_conversion_absoluteWidth="393dp"
-            tools:layout_editor_absoluteY="0dp" />
+            android:background="#EF1616"
+            android:text="Nintendo"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="55dp" />
 
-        <TextView
-            android:id="@+id/choose"
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/playstation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Choose Your Console"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/quiz"
-            tools:layout_conversion_absoluteHeight="19dp"
-            tools:layout_conversion_absoluteWidth="393dp" />
+            android:background="#142DAA"
+            android:text="Playstation"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="55dp" />
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/xbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/choose"
-            app:tabMode="scrollable"
-            tools:layout_conversion_absoluteHeight="48dp"
-            tools:layout_conversion_absoluteWidth="282dp">
-
-            <com.google.android.material.tabs.TabItem
-                android:id="@+id/nintendo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#EF1616"
-                android:text="Nintendo"
-                tools:layout_conversion_absoluteHeight="0dp"
-                tools:layout_conversion_absoluteWidth="0dp"
-                tools:layout_editor_absoluteX="55dp"
-                tools:layout_editor_absoluteY="55dp" />
-
-            <com.google.android.material.tabs.TabItem
-                android:id="@+id/playstation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Playstation"
-                tools:layout_conversion_absoluteHeight="0dp"
-                tools:layout_conversion_absoluteWidth="0dp"
-                tools:layout_editor_absoluteX="149dp"
-                tools:layout_editor_absoluteY="55dp" />
-
-            <com.google.android.material.tabs.TabItem
-                android:id="@+id/xbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Xbox"
-                tools:layout_conversion_absoluteHeight="0dp"
-                tools:layout_conversion_absoluteWidth="0dp"
-                tools:layout_editor_absoluteX="265dp"
-                tools:layout_editor_absoluteY="55dp" />
-        </com.google.android.material.tabs.TabLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:text="Xbox"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="265dp"
+            tools:layout_editor_absoluteY="55dp" />
+    </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabs" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

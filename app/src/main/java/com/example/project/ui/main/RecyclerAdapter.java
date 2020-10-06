@@ -1,4 +1,4 @@
-package com.example.project;
+package com.example.project.ui.main;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,17 +8,19 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.project.QuizSet;
+import com.example.project.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecycleAdapter extends RecyclerView.Adapter<RowHolder> {
+public class RecyclerAdapter extends RecyclerView.Adapter<RowHolder> {
     private List<QuizSet> list = new ArrayList<>();
     private Context context;
 
 
-    public RecycleAdapter(Context context){
-        this.context = context;
-   }
+    public RecyclerAdapter(Context context){ this.context = context; }
+
     public void addQuizSet(QuizSet set) {
         list.add(set);
         notifyDataSetChanged();

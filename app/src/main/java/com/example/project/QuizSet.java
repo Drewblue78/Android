@@ -1,14 +1,14 @@
 package com.example.project;
 
 public class QuizSet {
-    private float n;
-    private float q;
-    private float a;
-    private float b;
-    private float c;
-    private float d;
+    private  int n;
+    private char q;
+    private char a;
+    private char b;
+    private char c;
+    private char d;
 
-    public QuizSet(float n, float q, float a, float b, float c, float d) {
+    public QuizSet(int n, char q, char a, char b, char c, char d) {
         this.n = n;
         this.q = q;
         this.a = a;
@@ -17,27 +17,27 @@ public class QuizSet {
         this.d = d;
     }
 
-    public float getN() {
+    public int getN() {
         return n;
     }
 
-    public float getQ() {
+    public char getQ() {
         return q;
     }
 
-    public float getA() {
+    public char getA() {
         return a;
     }
 
-    public float getB() {
+    public char getB() {
         return b;
     }
 
-    public float getC() {
+    public char getC() {
         return c;
     }
 
-    public float getD() {
+    public char getD() {
         return d;
     }
 }

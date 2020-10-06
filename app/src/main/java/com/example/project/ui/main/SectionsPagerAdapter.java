@@ -6,7 +6,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.project.BlankFragment;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -31,15 +30,15 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public BlankFragment getItem(int position) {
+    public QuizFragment getItem(int position) {
         // getItem is called to instantiate the fragment for the given page.
         // Return a PlaceholderFragment (defined as a static inner class below).
 //        return (Fragment) QuizFragment.PlaceholderFragment.newInstance(position + 1);
         switch (position){
-            case 0: return BlankFragment.newInstance("nintendo","");
-            case 1: return BlankFragment.newInstance("playstation","");
+            case 0: return QuizFragment.newInstance("nintendo");
+            case 1: return QuizFragment.newInstance("playstation");
             case 2:
-            default:return BlankFragment.newInstance("xbox","");
+            default:return QuizFragment.newInstance("xbox");
         }
 
     }
