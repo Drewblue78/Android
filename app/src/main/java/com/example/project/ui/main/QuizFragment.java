@@ -1,5 +1,6 @@
 package com.example.project.ui.main;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,6 +14,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.project.R;
+import com.example.project.sql_db.SQLiteManager;
+import com.example.project.sql_db.Table;
 
 
 public class QuizFragment extends Fragment {
@@ -24,7 +27,7 @@ public class QuizFragment extends Fragment {
     private Button btnconsole;
     private RecyclerView questionList;
     private RecyclerAdapter adapter;
-
+    private SQLiteManager sql;
     private String nConsole;
 
     public static QuizFragment newInstance(String console1) {
@@ -41,7 +44,7 @@ public class QuizFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             nConsole = getArguments().getString(ARG_CONSOLE);
-
+            sql = new SQLiteManager(getContext());
         }
 
     }
@@ -58,9 +61,11 @@ public class QuizFragment extends Fragment {
         btnconsole.setText(nConsole);
 
         adapter = new RecyclerAdapter(getContext());
-        rAccel.setAdapter(rAccelAdapter);
-        rAccel.setLayoutManager(new LinearLayoutManager(getContext()));
+        questionList.setAdapter(adapter);
+        questionList.setLayoutManager(new LinearLayoutManager(getContext()));
 
+        SQLiteDatabase db = sql.getReadableDatabase();
+        adapter.setList(Table. );
         switch(nConsole){
             case "nintendo":
                 banner.setImageResource(R.drawable.nintendo);

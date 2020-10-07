@@ -8,22 +8,26 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.project.QuizSet;
 import com.example.project.R;
+import com.example.project.sql_db.Question;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RowHolder> {
-    private List<QuizSet> list = new ArrayList<>();
+    private List<Question> list = new ArrayList<>();
     private Context context;
 
 
     public RecyclerAdapter(Context context){ this.context = context; }
 
-    public void addQuizSet(QuizSet set) {
+    public void addQuestion(Question set) {
         list.add(set);
         notifyDataSetChanged();
+    }
+
+    public void setList(List<Question> list) {
+        this.list = list;
     }
 
     @NonNull
@@ -36,7 +40,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RowHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull RowHolder holder, int position) {
-        QuizSet set = list.get(position);
+        Question set = list.get(position);
         holder.bindModel(set);
     }
 

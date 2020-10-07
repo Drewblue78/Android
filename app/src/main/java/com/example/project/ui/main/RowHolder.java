@@ -7,8 +7,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.project.QuizSet;
 import com.example.project.R;
+import com.example.project.sql_db.Question;
 
 public class RowHolder extends RecyclerView.ViewHolder {
 
@@ -31,12 +31,12 @@ public class RowHolder extends RecyclerView.ViewHolder {
 
     }
 
-    public void bindModel (QuizSet set){
-        n.setText("N" + set.getN());
-        q.setText("Q" + set.getQ());
-        a.setText("A" + set.getA());
-        b.setText("B" + set.getB());
-        c.setText("C" + set.getC());
-        d.setText("D" + set.getD());
+    public void bindModel (Question set){
+        n.setText("N" + set.getId());
+        q.setText("Q" + set.getQuestion());
+        a.setText("A" + set.getAnswer_a());
+        b.setText("B" + set.getAnswer_b());
+        c.setText("C" + set.getAnswer_c());
+        d.setText("D" + set.getAnswer_d());
     }
 }
