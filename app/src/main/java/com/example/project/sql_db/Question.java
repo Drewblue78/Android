@@ -10,8 +10,9 @@ public class Question implements Serializable {
     private String answer_c;
     private String answer_d;
     private int correct;
+    private String category;
 
-    public Question(String question, String answer_a, String answer_b, String answer_c, String answer_d, int correct) {
+    public Question(int id, String question, String answer_a, String answer_b, String answer_c, String answer_d, int correct, String category) {
 
         this.question = question;
         this.answer_a = answer_a;
@@ -19,6 +20,7 @@ public class Question implements Serializable {
         this.answer_c = answer_c;
         this.answer_d = answer_d;
         this.correct = correct;
+        this.category = category;
     }
 
     public long getId() {
@@ -75,5 +77,13 @@ public class Question implements Serializable {
 
     public void setCorrect(int correct) {
         this.correct = correct;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }

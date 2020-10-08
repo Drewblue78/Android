@@ -65,7 +65,8 @@ public class QuizFragment extends Fragment {
         questionList.setLayoutManager(new LinearLayoutManager(getContext()));
 
         SQLiteDatabase db = sql.getReadableDatabase();
-        adapter.setList(Table. );
+        adapter.setList(Table.getQuestions());
+
         switch(nConsole){
             case "nintendo":
                 banner.setImageResource(R.drawable.nintendo);

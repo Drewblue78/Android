@@ -19,8 +19,9 @@ public class SQLiteManager extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(Table.TABLE_CREATE_QUERY);
-        Table.insert(db, new Question("what is the answer to this?",
-                "cow", "chicken","water", "bread",1));
+        for(Question q: Samples.questions){
+            Table.insert(db,q);
+        }
     }
 
     @Override
