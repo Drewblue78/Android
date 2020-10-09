@@ -28,9 +28,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public QuizFragment getItem(int position) {
-        // getItem is called to instantiate the fragment for the given page.
-        // Return a PlaceholderFragment (defined as a static inner class below).
-//        return (Fragment) QuizFragment.PlaceholderFragment.newInstance(position + 1);
+
         switch (position){
             case 0: return QuizFragment.newInstance("nintendo");
             case 1: return QuizFragment.newInstance("playstation");

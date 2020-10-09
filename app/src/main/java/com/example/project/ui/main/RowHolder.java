@@ -29,14 +29,15 @@ public class RowHolder extends RecyclerView.ViewHolder {
         c = itemView.findViewById(R.id.button3);
         d = itemView.findViewById(R.id.button4);
 
+
     }
 
     public void bindModel (Question set){
-        n.setText("N" + set.getId());
-        q.setText("Q" + set.getQuestion());
-        a.setText("A" + set.getAnswer_a());
-        b.setText("B" + set.getAnswer_b());
-        c.setText("C" + set.getAnswer_c());
-        d.setText("D" + set.getAnswer_d());
+        n.setText("" + set.getId());
+        q.setText("" + set.getQuestion());
+        a.setText("" + set.getAnswer_a());
+        b.setText("" + set.getAnswer_b());
+        c.setText("" + set.getAnswer_c());
+        d.setText("" + set.getAnswer_d());
     }
 }

@@ -10,11 +10,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.project.R;
+import com.example.project.sql_db.Question;
 import com.example.project.sql_db.SQLiteManager;
+import com.example.project.sql_db.Samples;
 import com.example.project.sql_db.Table;
 
 
@@ -67,16 +70,45 @@ public class QuizFragment extends Fragment {
         SQLiteDatabase db = sql.getReadableDatabase();
         adapter.setList(Table.getQuestions(db));
 
-        switch(nConsole){
+        switch (nConsole) {
             case "nintendo":
                 banner.setImageResource(R.drawable.nintendo);
 //                btnconsole.setBackgroundResource(R.color.#E4000F);
                 break;
             case "playstation":
-                banner.setImageResource(R.drawable.playstation); break;
+                banner.setImageResource(R.drawable.playstation);
+                break;
             case "xbox":
-                banner.setImageResource(R.drawable.xbox); break;
+                banner.setImageResource(R.drawable.xbox);
+                break;
         }
         return v;
+    }
+
+    //    Quiz date
+    private int score = 0;
+
+    public class OptionSelectCallback implements View.OnClickListener {
+        private Question question;
+        private int option;
+        private QuizFragment quiz;
+
+        public OptionSelectCallback(Question question, int option, QuizFragment quiz) {
+            this.question = question;
+            this.option = option;
+            this.quiz = quiz;
+        }
+
+        //TODO what if they click the button more than once
+        @Override
+        public void onClick(View v) {
+            question.getCorrect();
+            if (option == question.getCorrect()) {
+                score = score + 1;
+            }
+
+
+            Samples.questions.getClass();
+        }
     }
 }
