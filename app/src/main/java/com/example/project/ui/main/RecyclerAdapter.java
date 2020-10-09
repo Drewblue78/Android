@@ -33,8 +33,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RowHolder> {
     @NonNull
     @Override
     public RowHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View rowView  = LayoutInflater.from(context).inflate(R.layout.recycler_row_nquiz_set, parent);
-        RowHolder row = new RowHolder(rowView);
+        View rowView  = LayoutInflater.from(context).inflate(R.layout.recycler_row_nquiz_set, parent, false);
+
+                RowHolder row = new RowHolder(rowView);
         return row;
     }
 

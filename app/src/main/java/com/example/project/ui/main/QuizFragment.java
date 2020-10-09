@@ -65,12 +65,12 @@ public class QuizFragment extends Fragment {
         questionList.setLayoutManager(new LinearLayoutManager(getContext()));
 
         SQLiteDatabase db = sql.getReadableDatabase();
-        adapter.setList(Table.getQuestions());
+        adapter.setList(Table.getQuestions(db));
 
         switch(nConsole){
             case "nintendo":
                 banner.setImageResource(R.drawable.nintendo);
-
+//                btnconsole.setBackgroundResource(R.color.#E4000F);
                 break;
             case "playstation":
                 banner.setImageResource(R.drawable.playstation); break;
